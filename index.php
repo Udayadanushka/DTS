@@ -44,7 +44,6 @@
         }
     </style>
 </head>
-</head>
 <body>
 
       <h2>Billing System</h2>
@@ -88,8 +87,6 @@
 
         <button type="submit" class="button">Pay Now</button>
     </form>
-
-    <!-- Your existing HTML content -->
 
 </body>
 </html>
