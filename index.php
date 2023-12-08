@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billing System</title>
@@ -27,7 +26,7 @@
         }
 
         th {
-            background-color: #e3e3e3;
+            background-color: #f2f2f2;
         }
 
         .button {
@@ -46,7 +45,7 @@
 </head>
 <body>
 
-      <h2>Billing System</h2>
+    <h2>Billing System</h2>
 
     <table>
         <tr>
@@ -75,19 +74,26 @@
 
     <h3>Total: $35.00</h3>
 
-    <button class="button">Pay Now</button>
-
+    <!-- Add hidden fields for each row to send data to the server -->
     <form id="billingForm" action="save_data.php" method="post">
-        <!-- Include additional hidden fields to send data to the server -->
         <input type="hidden" name="item" value="1">
         <input type="hidden" name="description" value="Item 1">
         <input type="hidden" name="quantity" value="2">
         <input type="hidden" name="price" value="10.00">
         <input type="hidden" name="total" value="20.00">
 
+        <input type="hidden" name="item" value="2">
+        <input type="hidden" name="description" value="Item 2">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="price" value="15.00">
+        <input type="hidden" name="total" value="15.00">
+
         <button type="submit" class="button">Pay Now</button>
     </form>
 
+    <script>
+        // You can use JavaScript to dynamically generate and append hidden fields based on user input
+    </script>
+
 </body>
 </html>
-
