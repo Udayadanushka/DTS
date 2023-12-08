@@ -2,8 +2,8 @@
 // Assuming your MySQL database connection details
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database = "your_database_name";
+$password = "root";
+$database = "dtsoft";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
